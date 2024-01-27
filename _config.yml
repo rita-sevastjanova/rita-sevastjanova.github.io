@@ -1,6 +1,6 @@
 # Site settings
 title: A.P
-baseurl: "/rita-sevastjanova/rita-sevastjanova.github.io"
+baseurl: "https://rita-sevastjanova.github.io"
 url: "https://rita-sevastjanova.github.io"
 google_analytics: # Tracking ID, e.g. "UA-000000-01"
 
