@@ -1,5 +1,5 @@
 # Site settings
-title: A.P
+title:
 baseurl: "https://rita-sevastjanova.github.io"
 url: "https://rita-sevastjanova.github.io"
 google_analytics: # Tracking ID, e.g. "UA-000000-01"
@@ -7,7 +7,7 @@ google_analytics: # Tracking ID, e.g. "UA-000000-01"
 # Author
 author:
   name: Rita Sevastjanova
-  desc: Hello.
+  desc:
   email: rita.sevastjanova@inf.ethz.ch
   selfie: assets/img/profile.jpg
 
@@ -23,7 +23,7 @@ social:
   google_plus:
   instagram:
   keybase:
-  linkedin: https://www.linkedin.com/in/kssim/ 
+  linkedin: https://www.linkedin.com/in/rita-sevastjanova-29a308149/
   pinterest:
   reddit:
   soundcloud:
@@ -31,7 +31,7 @@ social:
   steam:
   tumblr:
   gitlab:
-  twitter: Test
+  twitter: https://twitter.com/RSevastjanova
   vimeo:
   wordpress:
   youtube:
