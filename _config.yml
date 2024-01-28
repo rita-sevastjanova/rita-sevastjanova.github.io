@@ -7,7 +7,7 @@ google_analytics: # Tracking ID, e.g. "UA-000000-01"
 # Author
 author:
   name: Rita Sevastjanova
-  desc:
+  desc: I design interactive visualizations to support analysis of complex, high-dimensional data.
   email: rita.sevastjanova@inf.ethz.ch
   selfie: assets/img/profile.jpg
 
@@ -60,3 +60,4 @@ exclude:
   - "LICENSE"
   - "READE.md"
   - "screenshot.png"
+  - "vendor"

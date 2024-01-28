@@ -5,9 +5,25 @@ layout: base
 <div class="post">
   <h2 class="post-title">{{ page.title }}</h2>
   <div class="post-line"></div>
-
-  {{ content }}
-
+  {{ page.content }}
+  {% if page.demos %}
+  <h2>Demos</h2>
+  <div class="social-layer">
+    <div class="social-icons">
+      <ul>
+        {% include demos.html %}
+      </ul>
+    </div>
+  </div>
+  {% endif %}
+  {% if page.papers %}
+  <h2>Selected Publications</h2>
+  <div class="">
+    <ul>
+      {% include papers.html %}
+    </ul>
+  </div>
+  {% endif %}
 </div>
 
 <div class="pagination">

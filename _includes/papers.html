@@ -1,0 +1,10 @@
+  {% for paper in page.papers %}
+  <li>
+    <span>{{ paper.text }}</span>
+    <a href="{{paper.pdf}}" title="">
+    <span class="fa-stack fa">
+      <i class="fa fa-file-pdf"></i>
+    </span>
+    </a>
+  </li>
+  {% endfor %}
