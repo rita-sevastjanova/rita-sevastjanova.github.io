@@ -3,8 +3,9 @@ layout: about
 ---
 
 # About Me
-My research interests are related to Large Language Models (LLMs) and their embedding spaces. In particular, I explore which linguistic properties as well as biases get encoded in contextual word embeddings.
+My research interests are related to large language models (LLMs) and their embedding spaces. In particular, I have worked on different projects to understand which linguistic properties and biases get encoded in contextual word embeddings. Together with my collaborators, we have designed diverse visual analytics approaches that support the interactive investigation of patterns in these high-dimensional vectors.
 
+My interests are not limited to language models, though. During my PhD, I  also explored active learning and visual interactive labeling methods for generating labeled datasets with as little human input as possible, the potential of integrating game elements into visual analytics applications to support user engagement, and other visual data analysis methods.
 <br/>
 
 # Career
