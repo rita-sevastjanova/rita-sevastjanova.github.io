@@ -21,7 +21,7 @@ layout: base
 
   <div class="content">
     {{ content }}
-    <h2>Demos</h2>
+    <h2>Projects</h2>
     {% for page in site.posts %}
     <div class="post">
       {% if page.demos %}
@@ -33,14 +33,14 @@ layout: base
         </div>
       </div>
       {% endif %}
-      {% if page.papers %}
+      <!--{% if page.papers %}
       <h2>Selected Publications</h2>
       <div class="">
         <ul>
           {% include papers.html %}
         </ul>
       </div>
-      {% endif %}
+      {% endif %}-->
     </div>
     {% endfor %}
   </div>

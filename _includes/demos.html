@@ -2,7 +2,6 @@
   {% for demo in page.demos %}
   <article>
     <div class="article-wrapper">
-      <a href="{{ demo.link }}" title=""></a>
       <figure>
         <img src="{{ site.baseurl }}/{{ demo.img }}" alt="" width="50%"/>
       </figure>
@@ -11,6 +10,8 @@
         <p>
           {{ demo.descr }}
         </p>
+        <a href="{{ demo.pdf }}"><button><i class="fa fa-file-pdf"></i></button></a>
+        <a href="{{ demo.link }}"><button>DEMO</button></a>
       </div>
     </div>
   </article>
