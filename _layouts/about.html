@@ -7,19 +7,41 @@ layout: base
     <img class="selfie" alt="{{ site.author.name }}" src="{{ site.author.selfie }}" />
     <div class="info">
       <div class="title">{{ site.author.name }}</div>
+      <div class="lab">{{ site.author.lab }}</div>
       <div class="description">{{ site.author.desc }}</div>
+      <div class="social-layer">
+        <div class="social-icons">
+          <ul>
+            {% include icons.html %}
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="content">
     {{ content }}
-    </br>
-    <div class="social-layer">
-      <div class="social-icons">
+    <h2>Demos</h2>
+    {% for page in site.posts %}
+    <div class="post">
+      {% if page.demos %}
+      <div class="social-layer">
+        <div class="social-icons">
+          <ul>
+            {% include demos.html %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+      {% if page.papers %}
+      <h2>Selected Publications</h2>
+      <div class="">
         <ul>
-          {% include icons.html %}
+          {% include papers.html %}
         </ul>
       </div>
+      {% endif %}
     </div>
+    {% endfor %}
   </div>
 </div>

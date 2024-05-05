@@ -2,16 +2,8 @@
 layout: about
 ---
 
-# About Me
-My research interests are related to large language models (LLMs) and their embedding spaces. In particular, I have worked on different projects to understand which linguistic properties and biases get encoded in contextual word embeddings. Together with my collaborators, I have designed diverse visual analytics approaches that support the interactive investigation of patterns in these high-dimensional vectors.
-
-My interests are not limited to language models, though. During my PhD, I  also explored active learning and visual interactive labeling methods for generating labeled datasets with as little human input as possible, the potential of integrating game elements into visual analytics applications to support user engagement, and other visual data analysis methods.
-<br/>
-
-# Career
-<b>2023-now</b>: PostDoc at the ETH Zürich, Interactive Visualization and Intelligence Augmentation Lab
-<br/>
-<b>2017-2023</b>: PhD at the University of Konstanz, Data Analysis and Visualization Lab 
+## About Me
+My research interests are related to large language models (LLMs) and their embedding spaces. Together with computational linguists and NLP researchers, I have worked on different projects that explored which linguistic properties and biases get encoded in contextual word embeddings. My focus lies on designing visual analytics approaches that support the interactive investigation of patterns in these high-dimensional vectors.
 
 [//]: # (# Publications)
 
