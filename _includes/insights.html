@@ -1,8 +1,7 @@
-<section class="insights">
+<section class="insights articles">
   {% for demo in page.demos %}
   <article>
-    <div class="article-wrapper">
-      <div class="article-body">
+    <div class="article-wrapper-insights">
         <h2>{{ demo.name }}</h2>
         <figure>
           <img src="{{ site.baseurl }}/{{ demo.img }}" alt="" width="90%"/>
@@ -12,7 +11,6 @@
         </p>
         <a href="{{ demo.pdf }}"><button><i class="fa fa-file-pdf"></i></button></a>
         <a href="{{ demo.link }}"><button>DEMO</button></a>
-      </div>
     </div>
   </article>
   {% endfor %}

@@ -144,6 +144,10 @@
     gap: 24px;
   }
 
+  .article-wrapper-insights {
+    padding: 10px;
+  }
+
   .insights figure{
     margin-bottom: -40px;
   }
@@ -155,6 +159,9 @@
     .article-body p {
       display: none;
     }
+    .insights {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
   }
 
   @container card (min-width: 380px) {
@@ -162,6 +169,13 @@
       display: grid;
       grid-template-columns: 100px 1fr;
       gap: 16px;
+    }
+    .article-wrapper-insights {
+      display: block;
+    }
+    .article-wrapper-insights img {
+      scale: 80%;
+      margin-top: -20px;
     }
     .article-body {
       padding-left: 0;
@@ -175,6 +189,10 @@
       height: 100%;
       aspect-ratio: 1;
       object-fit: cover;
+    }
+
+    .insights {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
   }
 
