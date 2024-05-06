@@ -21,8 +21,8 @@ layout: base
 
   <div class="content">
     {{ content }}
-    <h2>Projects</h2>
-    {% for page in site.posts %}
+    <h2>Selected Publications</h2>
+    {% for page in site.categories.posts %}
     <div class="post">
       {% if page.demos %}
       <div class="social-layer">
@@ -43,5 +43,18 @@ layout: base
       {% endif %}-->
     </div>
     {% endfor %}
+    <h2>Exploring LLMs through Visualizations</h2>
+    {% for page in site.categories.insights %}
+    <div class="post">
+      <div class="social-layer">
+        <div class="social-icons">
+          <ul>
+            {% include insights.html %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
   </div>
 </div>

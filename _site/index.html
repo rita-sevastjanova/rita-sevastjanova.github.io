@@ -128,8 +128,7 @@
     <h2 id="about-me">About Me</h2>
 <p>My research interests are related to large language models (LLMs) and their embedding spaces. Together with computational linguists and NLP researchers, I have worked on different projects that explored which linguistic properties and biases get encoded in contextual word embeddings. My focus lies on designing visual analytics approaches that support the interactive investigation of patterns in these high-dimensional vectors.</p>
 
-
-    <h2>Projects</h2>
+    <h2>Selected Publications</h2>
     
     <div class="post">
       
@@ -313,13 +312,92 @@
       -->
     </div>
     
+    <h2>Exploring LLMs through Visualizations</h2>
+    
+    <div class="post">
+      <div class="social-layer">
+        <div class="social-icons">
+          <ul>
+            <section class="insights">
+  
+  <article>
+    <div class="article-wrapper">
+      <div class="article-body">
+        <h2>Pre-trained BERT learns gender bias</h2>
+        <figure>
+          <img src="/ap/assets/img/insights-bias.png" alt="" width="90%"/>
+        </figure>
+        <p>
+          Visualizations can be used to compare models according to their word embedding spaces. By measuring the similarity between words in the model’s parameter space for specific concepts (e.g., stereotypical words and different gender), we can see associations that the models have learned from the training data.
+        </p>
+        <a href="https://ieeexplore.ieee.org/abstract/document/9904461"><button><i class="fa fa-file-pdf"></i></button></a>
+        <a href="https://adapters.demo.lingvis.io"><button>DEMO</button></a>
+      </div>
+    </div>
+  </article>
+  
+  <article>
+    <div class="article-wrapper">
+      <div class="article-body">
+        <h2>BLOOM-1b3 learns unexpected biases</h2>
+        <figure>
+          <img src="/ap/assets/img/insights-prompt-bias4.png" alt="" width="90%"/>
+        </figure>
+        <p>
+          Visualizations can also be used to compare model outputs for slightly varying prompts. By representing outputs in a common 2D space and using clustering on output trajectories, we visually group similar outputs for exploration. As showcased here, especially models with fewer parameters produce more biased outputs.
+        </p>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10357717"><button><i class="fa fa-file-pdf"></i></button></a>
+        <a href="https://prompt-comparison.lingvis.io"><button>DEMO</button></a>
+      </div>
+    </div>
+  </article>
+  
+  <article>
+    <div class="article-wrapper">
+      <div class="article-body">
+        <h2>Function word embeddings encode a lot of information</h2>
+        <figure>
+          <img src="/ap/assets/img/insights-lmfing-function-word2.png" alt="" width="90%"/>
+        </figure>
+        <p>
+          In BERT, function word embeddings have a low self-similarity, especially in the upper layers. It means that the embedding vectors change if these words are used in different contexts. Hence, embedding vectors do not capture only the word semantic meaning. In upper layers, the nearest neighbors of function words do not necessary have the same POS tag, but rather the neighbors are content words from the same sentence.
+        </p>
+        <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14541"><button><i class="fa fa-file-pdf"></i></button></a>
+        <a href="https://lmfingerprints.lingvis.io"><button>DEMO</button></a>
+      </div>
+    </div>
+  </article>
+  
+  <article>
+    <div class="article-wrapper">
+      <div class="article-body">
+        <h2>BERT does not understand function word meaning</h2>
+        <figure>
+          <img src="/ap/assets/img/insights-funct-words3.png" alt="" width="90%"/>
+        </figure>
+        <p>
+          Although function words are highly contextualized, the model does not necessarily 'understand' their functional meaning in the sentence. In many cases, BERT makes semantically wrong predictions when varying used quantifiers, negations, and other function word classes.
+        </p>
+        <a href="https://aclanthology.org/2022.coling-1.272/"><button><i class="fa fa-file-pdf"></i></button></a>
+        <a href="https://function-words.lingvis.io"><button>DEMO</button></a>
+      </div>
+    </div>
+  </article>
+  
+</section>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
   </div>
 </div>
 
     </main>
     <footer>
       <span>
-        &copy; <time datetime="2024-05-05 16:27:39 +0200">2024</time> Rita Sevastjanova. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
+        &copy; <time datetime="2024-05-06 08:57:41 +0200">2024</time> Rita Sevastjanova. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
       </span>
     </footer>
   </body>
