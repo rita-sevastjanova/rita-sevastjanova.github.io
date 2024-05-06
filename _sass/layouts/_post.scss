@@ -152,9 +152,7 @@
     article {
       container: card/inline-size;
     }
-    .article-body p {
-      display: none;
-    }
+
     .insights {
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
