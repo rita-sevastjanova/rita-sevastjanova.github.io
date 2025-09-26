@@ -87,7 +87,7 @@ publications:
   - title: "Revealing the Unwritten: Visual Investigation of Beam Search Trees to Address Language Model Prompting Challenges"
     authors: "T. Spinner, R. Kehlbeck, R. Sevastjanova, T. Stähle, D.A. Keim, O. Deussen, M. El-Assady"
     journal: "Association for Computational Linguistics (Volume 3: System Demonstrations)"
-    year: 2023
+    year: 2025
     doi: "https://aclanthology.org/2025.acl-demo.29/"
     type: "conference"
     tags: ["visualization", "nlp", "explainability"]
