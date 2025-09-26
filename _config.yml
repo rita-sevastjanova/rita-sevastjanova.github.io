@@ -14,6 +14,13 @@ author:
 
 # Publications
 publications:
+  - title: "Dia-Lingle: A Gamified Interface for Dialectal Data Collection"
+    authors: "J. Sun, R. Sevastjanova, S. Ahmadi, R. Sennrich, M. El-Assady"
+    journal: "The Association for Computational Linguistics (Volume 3: System Demonstrations)"
+    year: 2025
+    doi: "https://aclanthology.org/2025.acl-demo.15/"
+    type: "conference"
+    tags: ["active learning", "gamification", "nlp"]
   - title: "Is General-Purpose AI Reasoning Sensitive to Data-Induced Cognitive Biases? Dynamic Benchmarking on Typical Software Engineering Dilemmas"
     authors: "F. Sovrano, G. Dominici, R. Sevastjanova, A. Stramiglio, A. Bacchelli"
     journal: "arXiv preprint arXiv:2508.11278"
