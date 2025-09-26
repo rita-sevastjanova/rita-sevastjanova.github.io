@@ -21,7 +21,7 @@ layout: base
 
   <div class="content">
     {{ content }}
-    <h2>Selected Publications</h2>
+    
     {% for page in site.categories.posts %}
     <div class="post">
       {% if page.demos %}
@@ -33,14 +33,6 @@ layout: base
         </div>
       </div>
       {% endif %}
-      <!--{% if page.papers %}
-      <h2>Selected Publications</h2>
-      <div class="">
-        <ul>
-          {% include papers.html %}
-        </ul>
-      </div>
-      {% endif %}-->
     </div>
     {% endfor %}
     <h2>Exploring LLMs through Visualizations</h2>
@@ -55,6 +47,11 @@ layout: base
       </div>
     </div>
     {% endfor %}
+    
+    <h2>Publications</h2>
+    <div class="publications-section">
+      {% include publications.html %}
+    </div>
 
   </div>
 </div>
