@@ -12,3 +12,5 @@ My research interests are related to large language models (LLMs) and their embe
     <li>[2016-2017]: <b>Master of Computer and Information Science</b>, University of Konstanz</li>
     <li>[2012-2016]: <b>Bachelor of Information Engineering</b>, University of Konstanz</li>
 </ul>
+
+## Selected Publications

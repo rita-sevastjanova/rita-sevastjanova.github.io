@@ -110,6 +110,68 @@
           color: $default-shade;
         }
       }
+      
+      .publication-tags {
+        margin-top: 0.5rem !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 0.3rem !important;
+        
+        .tag {
+          font-size: 0.8rem !important;
+          padding: 0.2rem 0.5rem !important;
+          border-radius: 3px !important;
+          font-weight: 500 !important;
+          text-transform: lowercase !important;
+          display: inline-block !important;
+          
+          // Pastel color scheme for different tags
+          &.tag-explainability {
+            background-color: #B8E6B8 !important; // Pastel green
+            color: #2D5A2D !important;
+          }
+          
+          &.tag-visualization {
+            background-color: #FFB3BA !important; // Pastel pink
+            color: #8B3A3A !important;
+          }
+          
+          &.tag-bias {
+            background-color: #F0E68C !important; // Pastel khaki
+            color: #6B5B2B !important;
+          }
+          
+          &.tag-nlp {
+            background-color: #BAE1FF !important; // Pastel blue
+            color: #2D4A8B !important;
+          }
+          
+          &.tag-text-analysis {
+            background-color: #E6BAFF !important; // Pastel purple
+            color: #5A2D8B !important;
+          }
+          
+          &.tag-active-learning {
+            background-color: #FFE4B5 !important; // Pastel peach
+            color: #8B5A2B !important;
+          }
+          
+          &.tag-comparative-design {
+            background-color: #FFB3E6 !important; // Pastel magenta
+            color: #8B2D5A !important;
+          }
+          
+          &.tag-gamification {
+            background-color: #DDA0DD !important; // Pastel plum
+            color: #4B2C4B !important;
+          }
+          
+          &.tag-uncertainty {
+            background-color: #E0E0E0 !important; // Pastel gray
+            color: #4A4A4A !important;
+          }
+        }
+      }
     }
     
     .publication-links {

@@ -3,7 +3,7 @@ layout: post
 title:  "Contextual Word Embedding Analysis"
 info: "What linguistic properties are encoded in contextual word embeddings?"
 tech: "conceptual framework, design studies, applications, evaluation studies"
-demos: [  {name: "LayerFlow", pdf: "https://arxiv.org/abs/2504.10504", link: "https://layerflow.ivia.ch", img: "assets/img/layerflow.png", descr: "How to communicate the uncertainty of the applied dimensionality reduction methods for embedding analysis?"},
+demos: [  {name: "LayerFlow", pdf: "https://arxiv.org/abs/2504.10504", link: "https://layerflow.ivia.ch", img: "assets/img/layerflow.png", descr: "How to communicate uncertainty in dimensionality reduction when used for word embedding analysis?"},
 #        {name: "Conceptual Framework", pdf: "https://bib.dbvis.de/publications/view/1028", link: "https://embedding-framework.lingvis.io", img: "assets/img/framework.png", descr: "What to consider when designing applications for word embedding contextualization tasks?"},
         {name: "LMFingerprints", pdf: "https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14541", link: "https://lmfingerprints.lingvis.io", img: "assets/img/lmfingerprints.png", descr: "Which linguistic properties are encoded in embedding vectors in different model's layers?"},
         {name: "Adapters", pdf: "https://ieeexplore.ieee.org/abstract/document/9904461", link: "https://adapters.demo.lingvis.io", img: "assets/img/adapters.png", descr: "Which language models encode semantic concepts such as stereotypes or word sentiment?"},

@@ -1,7 +1,7 @@
 # Site settings
 title: "Rita Sevastjanova"
 baseurl: ""
-url: "https://rita-sevastjanova.github.io"
+url: "http://localhost:4000"
 google_analytics: # Tracking ID, e.g. "UA-000000-01"
 
 # Author
@@ -20,227 +20,265 @@ publications:
     year: 2025
     doi: "https://arxiv.org/abs/2508.11278"
     type: "preprint"
+    tags: ["bias", "nlp"]
   - title: "Explainable Mapper: Charting LLM Embedding Spaces Using Perturbation-Based Explanation and Verification Agents"
     authors: "X. Yan, R. Sevastjanova, S. van der Ben, M. El-Assady, B. Wang"
     journal: "arXiv preprint arXiv:2507.18607"
     year: 2025
     doi: "https://arxiv.org/abs/2507.18607"
     type: "preprint"
+    tags: ["explainability", "visualization", "nlp"]
   - title: "LayerFlow: Layer-wise Exploration of LLM Embeddings using Uncertainty-aware Interlinked Projections"
     authors: "R. Sevastjanova, R. Gerling, T. Spinner, M. El-Assady"
     journal: "Computer Graphics Forum"
     year: 2025
     doi: "https://arxiv.org/abs/2504.10504"
     type: "journal"
+    tags: ["uncertainty", "visualization", "nlp", "explainability"]
   - title: "Concept-Level Explainability for Auditing & Steering LLM Responses"
     authors: "K. Amara, R. Sevastjanova, M. El-Assady"
     journal: "arXiv preprint arXiv:2505.07610"
     year: 2025
     doi: "https://arxiv.org/abs/2505.07610"
     type: "preprint"
+    tags: ["explainability", "nlp"]
   - title: "Finding Needles in Document Haystacks: Augmenting Serendipitous Claim Retrieval Workflows"
     authors: "M. Dück, S. Holter, R.S.M. Chan, R. Sevastjanova, M. El-Assady"
     journal: "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems"
     doi: "https://dl.acm.org/doi/full/10.1145/3706598.3713715"
     year: 2025
     type: "conference"
+    tags: ["text analysis", "visualization"]
   - title: "Feature Clock: High-Dimensional Effects in Two-Dimensional Plots"
     authors: "O. Ovcharenko, R. Sevastjanova, V. Boeva"
     journal: "2024 IEEE Visualization and Visual Analytics (VIS)"
     year: 2024
     doi: "https://arxiv.org/abs/2408.01294"
     type: "conference"
+    tags: ["visualization", "uncertainty"]
   - title: "Challenges and opportunities in text generation explainability"
     authors: "K. Amara, R. Sevastjanova, M. El-Assady"
     journal: "World Conference on Explainable Artificial Intelligence"
     doi: "https://arxiv.org/pdf/2405.08468"
     year: 2024
     type: "conference"
+    tags: ["explainability", "nlp", "text analysis"]
   - title: "Treeducation: A visual education platform for teaching treemap layout algorithms"
     authors: "J. Fuchs, B. Jäckl, M. Jüttler, D.A. Keim, R. Sevastjanova"
     journal: "IEEE Transactions on Visualization and Computer Graphics"
     doi: "https://ieeexplore.ieee.org/document/10508116"
     year: 2024
     type: "journal"
+    tags: ["visualization", "gamification"]
   - title: "Syntaxshap: Syntax-aware explainability method for text generation"
     authors: "K. Amara, R. Sevastjanova, M. El-Assady"
     journal: "Findings of the Association for Computational Linguistics"
     year: 2024
     doi: "https://aclanthology.org/2024.findings-acl.270/"
     type: "conference"
+    tags: ["explainability", "nlp"]
   - title: "The use of Active Learning systems for stimulus selection and response modelling in perception experiments"
     authors: "M. Einfeldt, R. Sevastjanova, K. Zahner-Ritter, E. Kazak, B. Braun"
     journal: "Computer Speech & Language"
     year: 2024
     doi: "https://www.sciencedirect.com/science/article/pii/S0885230823000566"
     type: "journal"
+    tags: ["active learning", "nlp"]
   - title: "Revealing the Unwritten: Visual Investigation of Beam Search Trees to Address Language Model Prompting Challenges"
     authors: "T. Spinner, R. Kehlbeck, R. Sevastjanova, T. Stähle, D.A. Keim, O. Deussen, M. El-Assady"
     journal: "Association for Computational Linguistics (Volume 3: System Demonstrations)"
     year: 2023
     doi: "https://aclanthology.org/2025.acl-demo.29/"
     type: "conference"
+    tags: ["visualization", "nlp", "explainability"]
   - title: "MediCoSpace: Visual Decision-Support for Doctor-Patient Consultations Using Medical Concept Spaces from EHRs"
     authors: "S. van der Linden, R. Sevastjanova, M. Funk, M. El-Assady"
     journal: "ACM Trans. on Management Information Systems"
     year: 2023
     doi: "https://doi.org/10.1145/3564275"
     type: "journal"
+    tags: ["visualization", "text analysis"]
   - title: "VisInReport: Complementing Visual Discourse Analytics Through Personalized Insight Reports"
     authors: "R. Sevastjanova, M. El-Assady, A. Bradley, C. Collins, M. Butt, D. Keim"
     journal: "IEEE Trans. on Visualization and Computer Graphics"
     year: 2022
     doi: "https://doi.org/10.1109/TVCG.2021.3104026"
     type: "journal"
+    tags: ["visualization", "text analysis"]
   - title: "Visualisierung der Covid-19-Inzidenzen und Behandlungskapazitäten mit Coronavis"
     authors: "W. Jentner, F. Sperrle, D. Seebacher, M. Kraus, R. Sevastjanova, et al."
     journal: "Resilienz und Pandemie: Handlungsempfehlungen anhand von Erfahrungen mit COVID-19"
     year: 2022
     type: "book_chapter"
+    tags: ["visualization"]
   - title: "QuestionComb: A Gamification Approach for the Visual Explanation of Linguistic Phenomena through Interactive Labeling"
     authors: "R. Sevastjanova, W. Jentner, F. Sperrle, R. Kehlbeck, J. Bernard, M. El-Assady"
     journal: "ACM Trans. on Interactive Intelligent Systems"
     year: 2021
     doi: "https://doi.org/10.1145/3429448"
     type: "journal"
+    tags: ["gamification", "visualization", "nlp", "active learning"]
   - title: "Is that Really a Question?: Going beyond Factoid Questions in NLP"
     authors: "A.-L. Kalouli, R. Kehlbeck, R. Sevastjanova, O. Deussen, D.A. Keim, M. Butt"
     journal: "14th Int. Conf. on Computational Semantics: IWCS 2021"
     doi: "https://aclanthology.org/2021.iwcs-1.13/"
     year: 2021
     type: "conference"
+    tags: ["nlp"]
   - title: "Reliable Estimates of Interpretable Cue Effects with Active Learning in Psycholinguistic Research"
     authors: "M. Einfeldt, R. Sevastjanova, K. Zahner-Ritter, E. Kazak, B. Braun"
     journal: "Interspeech 2021"
     year: 2021
     doi: "https://www.isca-archive.org/interspeech_2021/einfeldt21_interspeech.pdf"
     type: "conference"
+    tags: ["active learning", "nlp"]
   - title: "CommAID: Visual Analytics for Communication Analysis through Interactive Dynamics Modeling"
     authors: "M.T. Fischer, D. Seebacher, R. Sevastjanova, D.A. Keim, M. El-Assady"
     journal: "Computer Graphics Forum"
     year: 2021
     doi: "https://arxiv.org/abs/2106.06334"
     type: "conference"
+    tags: ["visualization", "text analysis"]
   - title: "NEAT-Novel Emergency Analysis Tool"
     authors: "W. Jentner, J. Buchmüller, F. Sperrle, R. Sevastjanova, T. Spinner, U. Schlegel, D. Streeb, H. Schäfer"
     journal: "2019 IEEE Conf. on Visual Analytics Science and Technology (VAST)"
     year: 2019
     doi: "https://ieeexplore.ieee.org/document/8986900"
     type: "conference"
+    tags: ["visualization"]
   - title: "ParHistVis: Visualization of Parallel Multilingual Historical Data"
     authors: "A.-L. Kalouli, R. Kehlbeck, R. Sevastjanova, K. Kaiser, G.A. Kaiser, M. Butt"
     journal: "Proc. of the 1st Int. Workshop on Computational Approaches to Historical Language Change"
     year: 2019
     doi: "https://aclanthology.org/W19-4714/"
     type: "conference"
+    tags: ["visualization", "nlp", "text analysis"]
   - title: "VIANA: Visual Interactive Annotation of Argumentation"
     authors: "F. Sperrle, R. Sevastjanova, R. Kehlbeck, M. El-Assady"
     journal: "2019 IEEE Conf. on Visual Analytics Science and Technology (VAST)"
     year: 2019
     doi: "https://arxiv.org/abs/1907.12413"
     type: "conference"
+    tags: ["visualization", "text analysis"]
   - title: "Visual Analytics of Conversational Dynamics"
     authors: "D. Seebacher, M.T. Fischer, R. Sevastjanova, D.A. Keim, M. El-Assady"
     journal: "EuroVis Workshop on Visual Analytics (EuroVA)"
     year: 2019
     doi: "https://arxiv.org/pdf/2105.04897"
     type: "conference"
+    tags: ["visualization", "text analysis"]
   - title: "Minions, Sheep, and Fruits: Metaphorical Narratives to Explain Artificial Intelligence and Build Trust"
     authors: "W. Jentner, R. Sevastjanova, F. Stoffel, D.A. Keim, J. Bernard, M. El-Assady"
     journal: "Workshop on Visualization for AI Explainability at IEEE"
     doi: "https://kops.uni-konstanz.de/server/api/core/bitstreams/d56d406e-49af-4aba-ad1d-937ed08af89d/content"
     year: 2018
     type: "workshop"
+    tags: ["explainability", "visualization"]
   - title: "Mixed-initiative Active Learning for Generating Linguistic Insights in Question Classification"
     authors: "R. Sevastjanova, M. El-Assady, A. Hautli-Janisz, A.-L. Kalouli, R. Kehlbeck, O. Deussen, D.A. Keim, M. Butt"
     journal: "Workshop on Data Systems for Interactive Analysis (DSIA) at IEEE VIS"
     doi: "https://cdn.ivia.ch/publications/pdf/2018sevastjanovamixed.pdf"
     year: 2018
     type: "workshop"
+    tags: ["active learning", "nlp"]
   - title: "The Performance of International Organizations: A New Measure and Dataset Based on Computational Text Analysis of Evaluation Reports"
     authors: "S. Eckhard, V. Jankauskas, E. Leuschner, I. Burton, T. Kerl, R. Sevastjanova"
     journal: "The Review of International Organizations"
     year: 2023
     doi: "https://link.springer.com/article/10.1007/s11558-023-09489-1"
     type: "journal"
+    tags: ["text analysis"]
   - title: "Going beyond Visualization: Verbalization as Complementary Medium to Explain Machine Learning Models"
     authors: "R. Sevastjanova, F. Beck, B. Ell, C. Turkay, R. Henkin, M. Butt, D.A. Keim, M. El-Assady"
     journal: "Workshop on Visualization for AI Explainability at IEEE VIS"
     doi: "https://cdn.ivia.ch/publications/pdf/2018sevastjanovagoing.pdf"
     year: 2018
     type: "workshop"
+    tags: ["explainability", "visualization"]
   - title: "LTMA: Layered Topic Matching for the Comparative Exploration, Evaluation, and Refinement of Topic Modeling Results"
     authors: "M. El-Assady, F. Sperrle, R. Sevastjanova, M. Sedlmair, D. Keim"
     journal: "2018 Int. Symposium on Big Data Visual and Immersive Analytics (BDVA)"
     year: 2018
     doi: "https://ieeexplore.ieee.org/document/8534018"
     type: "conference"
+    tags: ["visualization", "text analysis", ]
   - title: "ThreadReconstructor: Modeling Reply-Chains to Untangle Conversational Text through Visual Analytics"
     authors: "M. El-Assady, R. Sevastjanova, D. Keim, C. Collins"
     journal: "Computer Graphics Forum"
     year: 2018
     doi: "https://onlinelibrary.wiley.com/doi/10.1111/cgf.13425"
     type: "conference"
+    tags: ["visualization", "text analysis"]
   - title: "Progressive Learning of Topic Modeling Parameters: A Visual Analytics Framework"
     authors: "M. El-Assady, R. Sevastjanova, F. Sperrle, D. Keim, C. Collins"
     journal: "IEEE Trans. on Visualization and Computer Graphics"
     year: 2017
     doi: "https://ieeexplore.ieee.org/document/8019825"
     type: "journal"
+    tags: ["visualization", "text analysis"]
   - title: "NEREx: Named-Entity Relationship Exploration in Multi-Party Conversations"
     authors: "M. El-Assady, R. Sevastjanova, B. Gipp, D. Keim, C. Collins"
     journal: "Computer Graphics Forum"
     year: 2017
     doi: "https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.13181"
     type: "conference"
+    tags: ["visualization", "nlp", "text analysis"]
   - title: "Visual Comparison of Text Sequences Generated by Large Language Models"
     authors: "R. Sevastjanova, S. Vogelbacher, A. Spitz, D. Keim, M. El-Assady"
     journal: "2023 IEEE Visualization in Data Science (VDS)"
     year: 2023
     doi: "https://ieeexplore.ieee.org/document/10357717"
     type: "conference"
+    tags: ["visualization", "nlp", ]
   - title: "Explaining Contextualization in Language Models using Visual Analytics"
     authors: "R. Sevastjanova, A.-L. Kalouli, C. Beck, H. Hauptmann, M. El-Assady"
     journal: "Proc. of the Association for Computational Linguistics"
     year: 2021
     doi: "https://aclanthology.org/2021.acl-long.39/"
     type: "conference"
+    tags: ["explainability", "visualization", "nlp"]
   - title: "LMFingerprints: Visual Explanations of Language Model Embedding Spaces through Layerwise Contextualization Scores"
     authors: "R. Sevastjanova, A.-L. Kalouli, C. Beck, H. Hauptmann, M. El-Assady"
     journal: "Computer Graphics Forum"
     year: 2022
     doi: "https://doi.org/10.1111/cgf.14541"
     type: "journal"
+    tags: ["explainability", "visualization", "nlp"]
   - title: "Beware the Rationalization Trap! When Language Model Explainability Diverges from our Mental Models of Language"
     authors: "R. Sevastjanova, M. El-Assady"
     journal: "Communication in Human-AI Interaction Workshop at IJCAI-ECAI'22"
     doi: "https://arxiv.org/pdf/2207.06897"
     year: 2022
     type: "workshop"
+    tags: ["explainability", "nlp", "bias"]
   - title: "Shall we play? – Extending the Visual Analytics Design Space through Gameful Design Concepts"
     authors: "R. Sevastjanova, H. Schäfer, J. Bernard, D. Keim, M. El-Assady"
     journal: "MLUI 2019: Machine Learning from User Interactions for Visualization and Analytics, IEEE VIS Workshop"
     year: 2019
     doi: "https://ieeexplore.ieee.org/document/10075563"
     type: "workshop"
+    tags: ["gamification", "visualization"]
   - title: "WEC-Explainer: A Descriptive Framework for Exploring Word Embedding Contextualization"
     authors: "R. Sevastjanova, M. El-Assady"
     journal: "Exploring Research Opportunities for Natural Language, Text, and Data Visualization (NLVIZ) Workshop at IEEE VIS"
     doi: "https://cdn.ivia.ch/publications/pdf/2023sevastjanovawecexplainer.pdf"
     year: 2023
     type: "workshop"
+    tags: ["explainability", "visualization", "nlp"]
   - title: "Personalized Language Model Selection Through Gamified Elicitation of Contrastive Concept Preferences"
     authors: "R. Sevastjanova, H. Hauptmann, S. Deterding, M. El-Assady"
     journal: "IEEE Trans. on Visualization and Computer Graphics"
     year: 2024
     doi: "https://dl.acm.org/doi/10.1109/TVCG.2023.3296905"
     type: "journal"
+    tags: ["gamification", "nlp", "visualization"]
   - title: "Visual Comparison of Language Model Adaptation"
     authors: "R. Sevastjanova, E. Cakmak, S. Ravfogel, R. Cotterell, M. El-Assady"
     journal: "IEEE Trans. on Visualization and Computer Graphics"
     year: 2022
     doi: "https://arxiv.org/abs/2208.08176"
     type: "journal"
+    tags: ["visualization", "nlp", ]
 
 # social
 social:
