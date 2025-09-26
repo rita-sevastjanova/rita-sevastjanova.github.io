@@ -1,7 +1,7 @@
 # Site settings
 title: "Rita Sevastjanova"
 baseurl: ""
-url: "http://localhost:4000"
+url: "https://rita-sevastjanova.github.io"
 google_analytics: # Tracking ID, e.g. "UA-000000-01"
 
 # Author
