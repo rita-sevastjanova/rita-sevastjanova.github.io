@@ -136,10 +136,19 @@
     .profile {
       flex-direction: column;
       text-align: center;
+      align-items: center;
       
       .selfie {
         margin-right: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+        order: -1; // Place image first (at the top)
+        width: 100px;
+        height: 100px;
+      }
+      
+      .info {
+        order: 1; // Place info after image
       }
     }
   }
