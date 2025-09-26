@@ -73,6 +73,7 @@
       margin-right: 1rem;
       
       .publication-title {
+        font-family: $sans-serif !important;
         font-size: 1.1rem !important;
         font-weight: 600 !important;
         margin: 0 0 0.5rem 0 !important;
@@ -81,6 +82,7 @@
       }
       
       .publication-authors {
+        font-family: $sans-serif !important;
         font-size: 0.95rem !important;
         color: $default-color !important;
         margin-bottom: 0.3rem;
@@ -88,6 +90,7 @@
       }
       
       .publication-journal {
+        font-family: $sans-serif !important;
         font-size: 0.9rem !important;
         color: $default-color !important;
         margin-bottom: 0.3rem;
@@ -117,13 +120,14 @@
         flex-wrap: wrap !important;
         gap: 0.3rem !important;
         
-        .tag {
-          font-size: 0.8rem !important;
-          padding: 0.2rem 0.5rem !important;
-          border-radius: 3px !important;
-          font-weight: 500 !important;
-          text-transform: lowercase !important;
-          display: inline-block !important;
+            .tag {
+              font-family: $sans-serif !important;
+              font-size: 0.8rem !important;
+              padding: 0.2rem 0.5rem !important;
+              border-radius: 3px !important;
+              font-weight: 500 !important;
+              text-transform: lowercase !important;
+              display: inline-block !important;
           
           // Pastel color scheme for different tags
           &.tag-explainability {
