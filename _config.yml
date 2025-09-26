@@ -27,7 +27,7 @@ publications:
     year: 2025
     doi: "https://arxiv.org/abs/2508.11278"
     type: "preprint"
-    tags: ["bias", "nlp"]
+    tags: ["bias", "nlp", "explainability"]
   - title: "Explainable Mapper: Charting LLM Embedding Spaces Using Perturbation-Based Explanation and Verification Agents"
     authors: "X. Yan, R. Sevastjanova, S. van der Ben, M. El-Assady, B. Wang"
     journal: "arXiv preprint arXiv:2507.18607"
