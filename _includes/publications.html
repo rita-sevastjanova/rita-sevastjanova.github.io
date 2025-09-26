@@ -1,0 +1,28 @@
+{% assign sorted_publications = site.publications | sort: 'year' | reverse %}
+{% for publication in sorted_publications %}
+<div class="publication">
+  <div class="publication-content">
+    <h3 class="publication-title">{{ publication.title }}</h3>
+    <div class="publication-authors">{{ publication.authors }}</div>
+    <div class="publication-journal">
+      <span class="publication-venue">{{ publication.journal }}</span>
+      <span class="publication-year">{{ publication.year }}</span>
+      {% if publication.type %}
+      <span class="publication-type">{{ publication.type | capitalize }}</span>
+      {% endif %}
+    </div>
+  </div>
+  <div class="publication-links">
+    {% if publication.doi %}
+    <a href="{{ publication.doi }}" title="DOI" class="publication-link" target="_blank">
+      <i class="fa fa-external-link-alt"></i>
+    </a>
+    {% endif %}
+    {% if publication.pdf %}
+    <a href="{{ publication.pdf }}" title="PDF" class="publication-link" target="_blank">
+      <i class="fa fa-file-pdf"></i>
+    </a>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
