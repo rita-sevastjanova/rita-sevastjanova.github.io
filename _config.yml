@@ -229,7 +229,7 @@ publications:
     year: 2023
     doi: "https://ieeexplore.ieee.org/document/10357717"
     type: "conference"
-    tags: ["visualization", "nlp", ]
+    tags: ["visualization", "nlp", "bias" ]
   - title: "Explaining Contextualization in Language Models using Visual Analytics"
     authors: "R. Sevastjanova, A.-L. Kalouli, C. Beck, H. Hauptmann, M. El-Assady"
     journal: "Proc. of the Association for Computational Linguistics"
@@ -278,7 +278,7 @@ publications:
     year: 2022
     doi: "https://arxiv.org/abs/2208.08176"
     type: "journal"
-    tags: ["visualization", "nlp", ]
+    tags: ["visualization", "nlp", "bias"]
 
 # social
 social:
