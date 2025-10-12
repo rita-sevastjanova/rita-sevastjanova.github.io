@@ -196,6 +196,41 @@
   }
 }
 
+// Events section styles
+.about .events-section {
+  .articles {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    gap: 32px;
+  }
+  
+  .article-body {
+    text-align: center;
+    
+    h4 {
+      text-align: center;
+      margin-bottom: 0.8rem;
+    }
+    
+    p {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      
+      // Italic and black for event title (3rd paragraph)
+      &:nth-child(3) {
+        font-style: italic;
+        color: black;
+      }
+      
+      // Smaller font size for date and location
+      &:nth-child(4), &:nth-child(5) {
+        font-size: 0.85rem;
+        color: $default-tint;
+      }
+    }
+  }
+}
+
 // Responsive design
 @media (max-width: 768px) {
   .about {
@@ -231,6 +266,14 @@
       .publication-links {
         align-self: flex-end;
       }
+    }
+  }
+  
+  .about .events-section {
+    .articles {
+      grid-template-columns: 1fr;
+      padding-inline: 16px;
+      gap: 24px;
     }
   }
 }

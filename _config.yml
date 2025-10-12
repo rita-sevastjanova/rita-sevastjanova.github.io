@@ -287,6 +287,45 @@ publications:
     type: "journal"
     tags: ["visualization", "nlp", "bias", "explainability"]
 
+# Events
+events:
+  - name: "COLLEGIUM HELVETICUM"
+    img: "assets/img/collegium-helveticum.jpeg"
+    description: "Panel discussion and invited talk"
+    title: "Visual Analytics Approaches for Exploring Large Language Models"
+    date: "January 2025"
+    location: "Zürich, Switzerland"
+  - name: "IPAI EXPERIENCE DAY"
+    img: "assets/img/ipai.jpeg"
+    description: "Panel and invited talk"
+    title: "Investigating Biases in AI through Interactive Machine Learning"
+    date: "October 2024"
+    location: "Heilbronn, Germany"
+  - name: "DIGITALGIPFEL DER BUNDESREGIERUNG"
+    img: "assets/img/digitalgipfel.jpeg"
+    description: "Panel discussion"
+    title: "KI im Tagesgeschäft? – Erfolgsrezepte aus Unternehmen, öffentlicher Verwaltung und Politik"
+    date: "October 2024"
+    location: "Frankfurt am Main, Germany"
+  - name: "TED AI"
+    img: "assets/img/tedai.jpeg"
+    description: "Workshop"
+    title: "Discovering the Power of Human-AI Collaboration Firsthand"
+    date: "October 2024"
+    location: "Vienna, Austria"
+  - name: "GOOGLE CLOUD PARTNER CONNECT"
+    img: "assets/img/google2.jpeg"
+    description: "Invited talk"
+    title: "Bias in Generative Language Models"
+    date: "September 2024"
+    location: "Zürich, Switzerland"
+  - name: "COLLECTIVE GATHERING AT THE STARTUP DAYS"
+    img: "assets/img/startupdays.jpeg"
+    description: "Panel discussion"
+    title: "Empathy in AI: From Tool to Human Friend"
+    date: "May 2024"
+    location: "Bern, Switzerland"
+
 # social
 social:
   email: true

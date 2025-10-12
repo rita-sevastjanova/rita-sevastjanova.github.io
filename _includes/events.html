@@ -1,0 +1,25 @@
+{% if site.events %}
+<section class="articles">
+  {% for event in site.events %}
+  <article>
+    <div class="article-wrapper">
+      <figure>
+        <img src="{{ site.baseurl }}/{{ event.img }}" alt="" width="90%"/>
+      </figure>
+      <div class="article-body">
+        <h4>{{ event.name }}</h4>
+        {% if event.description %}
+        <p>{{ event.description }}:</p>
+        {% endif %}
+        {% if event.title %}
+        <p>{{ event.title }}</p>
+        {% endif %}
+        {% if event.date %}
+        <p>{{ event.date }}, {{ event.location }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
