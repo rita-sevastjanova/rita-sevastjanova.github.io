@@ -244,11 +244,11 @@ body:has(#resume-section:target) .about .intro-section {
           justify-content: center;
           gap: 0.75rem;
           padding: 0.5rem 1rem;
-          background-color: #e5e5e5 !important;
+          background-color: #f0f0f0 !important;
           color: #000000 !important;
           text-decoration: none;
           border: none !important;
-          border-radius: 4px;
+          border-radius: 8px;
           font-weight: 500;
           font-size: 1rem;
           transition: background-color 0.2s ease;
@@ -262,7 +262,7 @@ body:has(#resume-section:target) .about .intro-section {
           &:focus,
           &:active,
           &:visited {
-            background-color: #e5e5e5 !important;
+            background-color: #f0f0f0 !important;
             color: #000000 !important;
             text-decoration: none;
             border: none !important;
@@ -577,6 +577,9 @@ body:has(#resume-section:target) .about .intro-section {
 
 button{
   border: none;
+  background-color: #EFEFEF;
+  border-radius: 6px;
+  color: black;
 }
 
 // Projects section styles
@@ -633,13 +636,12 @@ button{
       justify-content: center;
       border: none !important;
       outline: none !important;
-      background-color: #e5e5e5 !important;
+      background-color: #f0f0f0 !important;
       box-shadow: none !important;
-      border-radius: 4px;
+      border-radius: 8px;
       padding: 0.5rem 1rem;
       cursor: pointer;
       transition: background-color 0.2s ease;
-      text-decoration: none;
       color: #000000 !important;
       font-family: $sans-serif;
       font-weight: 500;
@@ -652,14 +654,12 @@ button{
       
       &:focus,
       &:active,
-      &:hover,
-      &:visited {
+      &:hover {
         outline: none !important;
         border: none !important;
         box-shadow: none !important;
-        text-decoration: none;
         color: #000000 !important;
-        background-color: #e5e5e5 !important;
+        background-color: #f0f0f0 !important;
       }
       
       i {
@@ -860,6 +860,9 @@ button{
         font-size: 1rem;
         width: auto;
         max-width: 100%;
+        background-color: #EFEFEF;
+        border-radius: 6px;
+        color: black;
       }
     }
   }
