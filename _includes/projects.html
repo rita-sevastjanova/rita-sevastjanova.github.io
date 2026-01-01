@@ -1,0 +1,22 @@
+{% if site.projects %}
+<section class="articles">
+  {% for project in site.projects %}
+  <article>
+    <div class="article-wrapper">
+      {% if project.img %}
+      <figure>
+        <img src="{{ site.baseurl }}/{{ project.img }}" alt="" width="90%"/>
+      </figure>
+      {% endif %}
+      <div class="article-body">
+        <h4><a href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a></h4>
+        {% if project.description %}
+        <p>{{ project.description }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+

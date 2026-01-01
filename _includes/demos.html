@@ -10,8 +10,8 @@
         <p>
           {{ demo.descr }}
         </p>
-        <a href="{{ demo.pdf }}"><button><i class="fa fa-file-pdf"></i></button></a>
-        <a href="{{ demo.link }}"><button>DEMO</button></a>
+        <button class="demo-button" onclick="window.open('{{ demo.pdf }}', '_blank')" type="button"><i class="fa fa-file-pdf"></i></button>
+        <button class="demo-button" onclick="window.open('{{ demo.link }}', '_blank')" type="button">DEMO</button>
       </div>
     </div>
   </article>

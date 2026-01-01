@@ -48,7 +48,7 @@ publications:
     year: 2025
     doi: "https://arxiv.org/abs/2505.07610"
     type: "preprint"
-    tags: ["explainability", "nlp"]
+    tags: ["explainability", "nlp", "bias"]
   - title: "Finding Needles in Document Haystacks: Augmenting Serendipitous Claim Retrieval Workflows"
     authors: "M. Dück, S. Holter, R.S.M. Chan, R. Sevastjanova, M. El-Assady"
     journal: "Proc. of the 2025 CHI Conference on Human Factors in Computing Systems"
@@ -97,7 +97,7 @@ publications:
     year: 2025
     doi: "https://aclanthology.org/2025.acl-demo.29/"
     type: "conference"
-    tags: ["visualization", "nlp", "explainability"]
+    tags: ["visualization", "nlp", "explainability", "bias"]
   - title: "MediCoSpace: Visual Decision-Support for Doctor-Patient Consultations Using Medical Concept Spaces from EHRs"
     authors: "S. van der Linden, R. Sevastjanova, M. Funk, M. El-Assady"
     journal: "ACM Trans. on Management Information Systems"
@@ -287,7 +287,13 @@ publications:
     type: "journal"
     tags: ["visualization", "nlp", "bias", "explainability"]
 
-# Events
+# Projects
+projects:
+  - name: "lingvis.io"
+    link: "https://lingvis.io"
+    img: "assets/img/lingvis.png"
+    description: "Visual Analytics. Linguistics. Machine Learning."
+
 events:
   - name: "COLLEGIUM HELVETICUM"
     img: "assets/img/collegium-helveticum.jpeg"

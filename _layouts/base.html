@@ -7,14 +7,24 @@
     <nav class="nav">
       <div class="nav-container">
         <a href="{{ site.baseurl }}/">
-          <h2 class="nav-title">{{ site.title }}</h2>
+          <img class="nav-logo" alt="{{ site.author.name }}" src="{{ site.author.selfie }}" />
         </a>
-        <!--ul>
-          <li><a href="{{ '/' | prepend: site.baseurl }}">About</a></li>
-          <li><a href="{{ '/portfolio' | prepend: site.baseurl }}/">Portfolio</a></li>
-        </ul-->
-    </div>
-  </nav>
+        <button class="nav-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="nav-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <div class="nav-buttons">
+          <a href="#projects-section" class="nav-button nav-button-projects">Projects</a>
+          <a href="#events-section" class="nav-button nav-button-events">Events</a>
+          <a href="#publications-section" class="nav-button nav-button-publications">Papers</a>
+          <a href="#resume-section" class="nav-button nav-button-resume">Resume</a>
+          <a href="mailto:{{ site.author.email }}" class="nav-button nav-button-contact">Contact</a>
+        </div>
+      </div>
+    </nav>
 
     <main>
       {{ content }}
@@ -24,5 +34,202 @@
         &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
       </span>
     </footer>
+    
+    <script>
+      // Handle navigation clicks without scrolling
+      document.addEventListener('DOMContentLoaded', function() {
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.nav-menu-toggle');
+        const navButtons = document.querySelector('.nav-buttons');
+        
+        if (menuToggle && navButtons) {
+          menuToggle.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            navButtons.classList.toggle('nav-buttons-open');
+          });
+          
+          // Close menu when clicking on a nav button (mobile)
+          const navButtonLinks = navButtons.querySelectorAll('.nav-button');
+          navButtonLinks.forEach(button => {
+            button.addEventListener('click', function() {
+              if (window.innerWidth <= 599) {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                navButtons.classList.remove('nav-buttons-open');
+              }
+            });
+          });
+        }
+        
+        const navButtonLinks = document.querySelectorAll('.nav-button[href^="#"]');
+        const sections = document.querySelectorAll('.section-container');
+        const introSection = document.querySelector('.intro-section');
+        
+        navButtonLinks.forEach(button => {
+          button.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+              e.preventDefault();
+              
+              // Hide all sections
+              sections.forEach(section => {
+                section.style.display = 'none';
+              });
+              
+              // Show the target section
+              const targetId = href.substring(1);
+              const targetSection = document.getElementById(targetId);
+              if (targetSection) {
+                // Show section first
+                targetSection.style.display = 'block';
+                
+                // Hide intro section
+                if (introSection) {
+                  introSection.style.display = 'none';
+                }
+                
+                // Re-initialize filters if publications section is shown
+                if (targetId === 'publications-section') {
+                  setTimeout(() => {
+                    initPublicationFilters();
+                  }, 100);
+                }
+                
+                // Reload iframe if it's the resume section (after display)
+                if (targetId === 'resume-section') {
+                  const iframe = targetSection.querySelector('iframe');
+                  if (iframe) {
+                    // Force reflow
+                    targetSection.offsetHeight;
+                    const src = iframe.src;
+                    iframe.src = '';
+                    setTimeout(() => {
+                      iframe.src = src;
+                    }, 50);
+                  }
+                }
+                
+              }
+              
+              // Update URL without scrolling
+              if (history.pushState) {
+                history.pushState(null, null, href);
+              }
+            }
+          });
+        });
+        
+        // Handle initial page load with hash
+        if (window.location.hash) {
+          const hash = window.location.hash.substring(1);
+          const targetSection = document.getElementById(hash);
+          if (targetSection && targetSection.classList.contains('section-container')) {
+            sections.forEach(section => {
+              section.style.display = 'none';
+            });
+            targetSection.style.display = 'block';
+            if (introSection) {
+              introSection.style.display = 'none';
+            }
+          }
+        }
+        
+        // Publication filtering by tags
+        function initPublicationFilters() {
+          const filterContainer = document.getElementById('publication-filters');
+          const publicationsSection = document.querySelector('.publications-section');
+          
+          if (!filterContainer || !publicationsSection) {
+            return;
+          }
+          
+          // Query publications within the publications section
+          const publications = publicationsSection.querySelectorAll('.publication');
+          
+          if (publications.length === 0) {
+            return;
+          }
+          
+          // Only create buttons if they don't exist yet (avoid duplicates)
+          const existingButtons = filterContainer.querySelectorAll('.filter-btn');
+          if (existingButtons.length === 1) { // Only "All" button exists
+            // Extract all unique tags from publications
+            const allTagsSet = new Set();
+            publications.forEach(publication => {
+              const tagsAttr = publication.getAttribute('data-tags');
+              if (tagsAttr && tagsAttr.trim()) {
+                const tags = tagsAttr.trim().split(/\s+/);
+                tags.forEach(tag => {
+                  const trimmedTag = tag.trim();
+                  if (trimmedTag) {
+                    allTagsSet.add(trimmedTag);
+                  }
+                });
+              }
+            });
+            
+            // Sort tags and create filter buttons
+            const sortedTags = Array.from(allTagsSet).sort();
+            sortedTags.forEach(tagSlug => {
+              const tagDisplay = tagSlug.replace(/-/g, ' ');
+              const button = document.createElement('button');
+              button.className = 'filter-btn';
+              button.setAttribute('data-filter', tagSlug);
+              button.textContent = tagDisplay;
+              filterContainer.appendChild(button);
+            });
+          }
+          
+          // Filter function
+          function filterPublications(filterValue) {
+            publications.forEach(publication => {
+              if (filterValue === 'all') {
+                publication.classList.remove('hidden');
+              } else {
+                const tagsAttr = publication.getAttribute('data-tags');
+                if (tagsAttr && tagsAttr.trim()) {
+                  const tags = tagsAttr.trim().split(/\s+/).map(tag => tag.trim());
+                  if (tags.includes(filterValue)) {
+                    publication.classList.remove('hidden');
+                  } else {
+                    publication.classList.add('hidden');
+                  }
+                } else {
+                  publication.classList.add('hidden');
+                }
+              }
+            });
+          }
+          
+          // Add click handlers to all filter buttons (including the "All" button)
+          const filterButtons = filterContainer.querySelectorAll('.filter-btn');
+          // Remove existing listeners by cloning buttons (cleaner approach)
+          filterButtons.forEach(button => {
+            // Remove any existing listeners by replacing the button
+            const newButton = button.cloneNode(true);
+            button.parentNode.replaceChild(newButton, button);
+          });
+          
+          // Add fresh event listeners
+          const freshButtons = filterContainer.querySelectorAll('.filter-btn');
+          freshButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+              e.preventDefault();
+              const filter = this.getAttribute('data-filter');
+              
+              // Update active state
+              freshButtons.forEach(btn => btn.classList.remove('active'));
+              this.classList.add('active');
+              
+              // Filter publications
+              filterPublications(filter);
+            });
+          });
+        }
+        
+        // Initialize filters
+        initPublicationFilters();
+      });
+    </script>
   </body>
 </html>

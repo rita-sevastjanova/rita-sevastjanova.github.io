@@ -3,18 +3,53 @@ layout: base
 ---
 
 <div class="about">
-  <div class="profile">
-    <img class="selfie" alt="{{ site.author.name }}" src="{{ site.author.selfie }}" />
-    <div class="info">
-      <div class="title">{{ site.author.name }}</div>
-      <div class="lab">{{ site.author.lab }}</div>
-      <div class="description">{{ site.author.desc }}</div>
-      <div class="social-layer">
-        <div class="social-icons">
-          <ul>
-            {% include icons.html %}
-          </ul>
-        </div>
+  <div class="intro-section">
+    <div class="intro-left">
+      <div class="intro-graphics">
+        <img class="intro-photo" alt="{{ site.author.name }}" src="{{ site.author.selfie }}" />
+      </div>
+    </div>
+    <div class="intro-right">
+      <h3 class="intro-headline">Hi! I am Rita Sevastjanova.</h3>
+      <p class="intro-text">
+        I am a <strong>data analyst</strong> with a <strong>visual analytics</strong> background, specializing in <strong>human-centered explainability</strong> for<strong> large language models</strong>. My work combines computational methods with interactive visual interfaces to bridge the gap between complex model internals and human understanding.
+        <br>
+        <br>
+        I earned my Ph.D. in Natural Sciences (Computer and Information Science) at the University of Konstanz in 2023.
+      </p>
+      <div class="intro-social">
+        <ul class="intro-social-icons">
+          {% if site.social.email %}
+          <li>
+            <a href="mailto:{{ site.author.email }}" title="email">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social.linkedin %}
+          <li>
+            <a href="{{ site.social.linkedin }}" title="{{ site.social.default_txt }} LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.social.twitter %}
+          <li>
+            <a href="https://twitter.com/{{ site.social.twitter }}" title="{{ site.social.default_txt }} Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
       </div>
     </div>
   </div>
@@ -22,27 +57,38 @@ layout: base
   <div class="content">
     {{ content }}
     
-    <h2>Events</h2>
-    <div class="post">
-      <div class="events-section">
-        {% include events.html %}
+    <div class="section-container" id="projects-section">
+      <h2 id="projects">Projects</h2>
+      
+      {% for page in site.categories.posts %}
+      <div class="post">
+        {% if page.demos %}
+        <div class="social-layer">
+          <div class="social-icons">
+            <ul>
+              {% include demos.html %}
+            </ul>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+      
+      <div class="post">
+        <div class="projects-section">
+          {% include projects.html %}
+        </div>
       </div>
     </div>
     
-    <h2>Selected Publications</h2>
-    {% for page in site.categories.posts %}
-    <div class="post">
-      {% if page.demos %}
-      <div class="social-layer">
-        <div class="social-icons">
-          <ul>
-            {% include demos.html %}
-          </ul>
+    <div class="section-container" id="events-section">
+      <h2 id="events">Events</h2>
+      <div class="post">
+        <div class="events-section">
+          {% include events.html %}
         </div>
       </div>
-      {% endif %}
     </div>
-    {% endfor %}
     <!--<h2>Exploring LLMs through Visualizations</h2>
     {% for page in site.categories.insights %}
     <div class="post">
@@ -56,9 +102,28 @@ layout: base
     </div>
     {% endfor %}-->
     
-    <h2>Publications</h2>
-    <div class="publications-section">
-      {% include publications.html %}
+    <div class="section-container" id="publications-section">
+      <h2 id="publications">Publications</h2>
+      
+      <h3>All Publications</h3>
+      <div class="publication-filters" id="publication-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+      </div>
+      <div class="publications-section">
+        {% include publications.html %}
+      </div>
+    </div>
+    
+    <div class="section-container" id="resume-section">
+      <h2 id="resume">Resume</h2>
+      <div class="resume-section">
+        <iframe src="{{ site.baseurl }}/assets/img/Rita_Sevastjanova_CV-2025.pdf" width="100%" height="100%" style="border: none;" type="application/pdf"></iframe>
+        <div class="resume-download-mobile">
+          <a href="{{ site.baseurl }}/assets/img/Rita_Sevastjanova_CV-2025.pdf" target="_blank" class="resume-download-button">
+            <i class="fa fa-file-pdf"></i> View/Download Resume (PDF)
+          </a>
+        </div>
+      </div>
     </div>
 
   </div>
