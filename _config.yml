@@ -14,6 +14,13 @@ author:
 
 # Publications
 publications:
+  - title: "A Design Space for Intelligent Agents in Mixed-Initiative Visual Analytics"
+    authors: "T. Stähle, S. Boyer, R. Sevastjanova, A. Narechania, M. El-Assady"
+    journal: "arXiv preprint arXiv:2512.23372"
+    year: 2025
+    doi: "https://arxiv.org/abs/2512.23372"
+    type: "preprint"
+    tags: ["visualization", "explainability", "ai agents"]
   - title: "Dia-Lingle: A Gamified Interface for Dialectal Data Collection"
     authors: "J. Sun, R. Sevastjanova, S. Ahmadi, R. Sennrich, M. El-Assady"
     journal: "Proc. of the Association for Computational Linguistics (System Demonstrations)"
@@ -34,7 +41,7 @@ publications:
     year: 2025
     doi: "https://arxiv.org/abs/2507.18607"
     type: "preprint"
-    tags: ["explainability", "visualization", "nlp"]
+    tags: ["explainability", "visualization", "nlp", "AI agents"]
   - title: "LayerFlow: Layer-wise Exploration of LLM Embeddings using Uncertainty-aware Interlinked Projections"
     authors: "R. Sevastjanova, R. Gerling, T. Spinner, M. El-Assady"
     journal: "Computer Graphics Forum"
@@ -42,6 +49,12 @@ publications:
     doi: "https://arxiv.org/abs/2504.10504"
     type: "journal"
     tags: ["uncertainty", "visualization", "nlp", "explainability"]
+  - title: "A multi-cue study to the interpretation of German information-seeking and rhetorical questions"
+    authors: "B. Braun, N. Dehé, M. Einfeldt, A. James, E. Kazak, R. Sevastjanova, K. Zahner-Ritter, E. Kazak"
+    journal: "Laboratory Phonology 16 (1)"
+    year: 2025
+    type: "journal"
+    tags: ["nlp", "active learning"]
   - title: "Concept-Level Explainability for Auditing & Steering LLM Responses"
     authors: "K. Amara, R. Sevastjanova, M. El-Assady"
     journal: "arXiv preprint arXiv:2505.07610"

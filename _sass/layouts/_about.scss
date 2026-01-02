@@ -605,6 +605,20 @@ body:has(#resume-section:target) .about .intro-section {
         border-color: $default-shade !important;
       }
     }
+    
+    &[data-filter="ai-agents"] {
+      background-color: #E8D4E8 !important;
+      color: #5A3A5A !important;
+      border-color: #E8D4E8 !important;
+      
+      &:hover {
+        border-color: $default-shade !important;
+      }
+      
+      &.active {
+        border-color: $default-shade !important;
+      }
+    }
   }
 }
 
@@ -736,6 +750,11 @@ body:has(#resume-section:target) .about .intro-section {
           &.tag-uncertainty {
             background-color: #B4D4D4 !important; // Light blue-green
             color: #3A5A5A !important;
+          }
+          
+          &.tag-ai-agents {
+            background-color: #E8D4E8 !important; // Light lavender
+            color: #5A3A5A !important;
           }
         }
       }
