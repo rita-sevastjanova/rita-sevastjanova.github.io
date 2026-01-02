@@ -224,7 +224,6 @@ body:has(#resume-section:target) .about .intro-section {
         max-width: 900px;
         margin: 2rem auto;
         padding: 1.5rem 1rem;
-        background-color: #fafafa;
         border-radius: 12px;
         font-size: 0.95rem;
         line-height: 1.5;
@@ -239,18 +238,17 @@ body:has(#resume-section:target) .about .intro-section {
       
       .project-intro-box {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 1rem;
         
         .project-intro-text {
-          width: 80%;
-          flex-shrink: 0;
+          width: 100%;
           
           p {
             margin: 0;
             line-height: 1.5;
             color: #000000;
-            text-justify: newspaper;
           }
         }
         
@@ -265,15 +263,11 @@ body:has(#resume-section:target) .about .intro-section {
         }
         
         .dissertation-button-container {
-          flex-shrink: 0;
           display: flex;
           align-items: center;
-          justify-content: center;
-          align-self: center;
-          width: 15%;
-          height: 100%;
-          min-height: 100%;
-          margin: auto 2rem auto auto;
+          justify-content: flex-start;
+          width: 100%;
+          margin-top: 0.5rem;
           
           .dissertation-button {
             display: inline-flex;
@@ -315,17 +309,13 @@ body:has(#resume-section:target) .about .intro-section {
         }
         
         .thesis-buttons-container {
-          flex-shrink: 0;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
-          justify-content: center;
-          align-self: center;
-          width: 22%;
-          height: 100%;
-          min-height: 100%;
+          justify-content: flex-start;
+          width: 100%;
           gap: 0.75rem;
-          margin-right: 1rem;
+          margin-top: 0.5rem;
           
           .thesis-button {
             display: inline-flex;
@@ -784,19 +774,19 @@ button{
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem 1rem;
-    background-color: #fafafa;
+    background-color: white !important;
     border-radius: 12px;
     font-size: 0.95rem;
     line-height: 1.5;
     color: #000000;
     grid-column: 1 / -1;
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
     
     .project-intro-text {
-      width: 75%;
-      flex-shrink: 0;
+      width: 100%;
       
       p {
         margin: 0;
@@ -806,8 +796,7 @@ button{
     }
     
     .thesis-intro-text {
-      width: 70%;
-      flex-shrink: 0;
+      width: 100%;
       
       p {
         margin: 0;
@@ -827,15 +816,11 @@ button{
     }
     
     .dissertation-button-container {
-      flex-shrink: 0;
       display: flex;
       align-items: center;
-      justify-content: center;
-      align-self: center;
-      width: 30%;
-      height: 100%;
-      min-height: 100%;
-      margin-right: 2rem;
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 0.5rem;
       
       .dissertation-button {
         display: inline-flex;
@@ -877,17 +862,13 @@ button{
         }
         
         .thesis-buttons-container {
-          flex-shrink: 0;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
-          justify-content: center;
-          align-self: center;
-          width: 30%;
-          height: 100%;
-          min-height: 100%;
+          justify-content: flex-start;
+          width: 100%;
           gap: 0.75rem;
-          margin-right: 2rem;
+          margin-top: 0.5rem;
           
           .thesis-button {
             display: inline-flex;
@@ -1018,6 +999,57 @@ button{
           font-size: 1rem;
           color: #000000 !important;
         }
+      }
+    }
+  }
+  
+  // Thesis and Dissertation buttons container at bottom
+  .thesis-dissertation-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    
+    .dissertation-button,
+    .thesis-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: none !important;
+      outline: none !important;
+      background-color: #f0f0f0 !important;
+      box-shadow: none !important;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      color: #000000 !important;
+      font-family: $sans-serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      text-decoration: none;
+      white-space: nowrap;
+      
+      &:focus,
+      &:active,
+      &:hover,
+      &:visited {
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: #000000 !important;
+        background-color: #f0f0f0 !important;
+        text-decoration: none;
+      }
+      
+      i {
+        font-size: 0.85rem;
+        color: #000000 !important;
+        margin-right: 0.5rem;
       }
     }
   }
@@ -1245,20 +1277,32 @@ button{
     
     .dissertation-button-container {
       width: 100%;
-      align-self: center;
-      justify-content: center;
+      align-self: flex-start;
+      justify-content: flex-start;
     }
     
     .thesis-buttons-container {
       width: 100%;
-      align-self: center;
-      justify-content: center;
+      align-self: flex-start;
+      justify-content: flex-start;
       height: auto;
       min-height: auto;
       
       .thesis-button {
         max-width: 100%;
       }
+    }
+  }
+  
+  .thesis-dissertation-buttons-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    
+    .dissertation-button,
+    .thesis-button {
+      width: 100%;
+      max-width: 300px;
     }
   }
 }
