@@ -1,21 +1,6 @@
 {% if site.projects %}
 <section class="articles">
   {% for project in site.projects %}
-  {% if project.name == "lingvis.io" %}
-  <div class="project-intro-box">
-    <div class="thesis-intro-text">
-      <p>During my bachelor and master studies, I worked as a research assistant, leading the development of the LingVis.io framework for rapid prototyping of linguistic, web-based visual analytics applications. Both my bachelor's and master's theses were conducted as part of this framework.</p>
-    </div>
-    <div class="thesis-buttons-container">
-      <a href="{{ site.baseurl }}/assets/img/Bachelor_Thesis.pdf" target="_blank" rel="noopener noreferrer" class="thesis-button">
-        <i class="fa fa-file-pdf"></i> Bachelor's Thesis
-      </a>
-      <a href="{{ site.baseurl }}/assets/img/Master_Thesis.pdf" target="_blank" rel="noopener noreferrer" class="thesis-button">
-        <i class="fa fa-file-pdf"></i> Master's Thesis
-      </a>
-    </div>
-  </div>
-  {% endif %}
   <article{% if project.name == "lingvis.io" %} class="lingvis-project"{% endif %}>
     <div class="article-wrapper">
       {% if project.img %}

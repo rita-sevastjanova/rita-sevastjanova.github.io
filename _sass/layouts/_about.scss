@@ -240,7 +240,7 @@ body:has(#resume-section:target) .about .intro-section {
       .project-intro-box {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
         
         .project-intro-text {
           width: 80%;
@@ -250,6 +250,7 @@ body:has(#resume-section:target) .about .intro-section {
             margin: 0;
             line-height: 1.5;
             color: #000000;
+            text-justify: newspaper;
           }
         }
         
@@ -269,10 +270,10 @@ body:has(#resume-section:target) .about .intro-section {
           align-items: center;
           justify-content: center;
           align-self: center;
-          width: 20%;
+          width: 15%;
           height: 100%;
           min-height: 100%;
-          margin: auto;
+          margin: auto 2rem auto auto;
           
           .dissertation-button {
             display: inline-flex;
@@ -291,6 +292,58 @@ body:has(#resume-section:target) .about .intro-section {
             font-weight: 500;
             font-size: 0.85rem;
             margin: 0 0.25rem;
+            text-decoration: none;
+            
+            &:focus,
+            &:active,
+            &:hover,
+            &:visited {
+              outline: none !important;
+              border: none !important;
+              box-shadow: none !important;
+              color: #000000 !important;
+              background-color: #f0f0f0 !important;
+              text-decoration: none;
+            }
+            
+            i {
+              font-size: 0.85rem;
+              color: #000000 !important;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        
+        .thesis-buttons-container {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          align-self: center;
+          width: 22%;
+          height: 100%;
+          min-height: 100%;
+          gap: 0.75rem;
+          margin-right: 1rem;
+          
+          .thesis-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none !important;
+            outline: none !important;
+            background-color: #f0f0f0 !important;
+            box-shadow: none !important;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            color: #000000 !important;
+            font-family: $sans-serif;
+            font-weight: 500;
+            font-size: 0.85rem;
+            margin: 0 0.1rem;
             text-decoration: none;
             
             &:focus,
@@ -336,7 +389,7 @@ body:has(#resume-section:target) .about .intro-section {
           font-family: $sans-serif;
           font-weight: 500;
           font-size: 0.85rem;
-          margin: 0 0.25rem;
+          margin: 0 1rem 0 0.25rem;
           text-decoration: none;
           
           &:focus,
@@ -779,9 +832,10 @@ button{
       align-items: center;
       justify-content: center;
       align-self: center;
-      width: 20%;
+      width: 30%;
       height: 100%;
       min-height: 100%;
+      margin-right: 2rem;
       
       .dissertation-button {
         display: inline-flex;
@@ -798,43 +852,137 @@ button{
         color: #000000 !important;
         font-family: $sans-serif;
         font-weight: 500;
-        font-size: 0.85rem;
-        margin: 0 0.25rem;
-        text-decoration: none;
-        
-        &:focus,
-        &:active,
-        &:hover,
-        &:visited {
-          outline: none !important;
-          border: none !important;
-          box-shadow: none !important;
-          color: #000000 !important;
-          background-color: #f0f0f0 !important;
-          text-decoration: none;
+            font-size: 0.85rem;
+            margin: 0 1rem 0 0.25rem;
+            text-decoration: none;
+            
+            &:focus,
+            &:active,
+            &:hover,
+            &:visited {
+              outline: none !important;
+              border: none !important;
+              box-shadow: none !important;
+              color: #000000 !important;
+              background-color: #f0f0f0 !important;
+              text-decoration: none;
+            }
+            
+            i {
+              font-size: 0.85rem;
+              color: #000000 !important;
+              margin-right: 0.5rem;
+            }
+          }
         }
         
-        i {
-          font-size: 0.85rem;
-          color: #000000 !important;
-          margin-right: 0.5rem;
+        .thesis-buttons-container {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          align-self: center;
+          width: 30%;
+          height: 100%;
+          min-height: 100%;
+          gap: 0.75rem;
+          margin-right: 2rem;
+          
+          .thesis-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none !important;
+            outline: none !important;
+            background-color: #f0f0f0 !important;
+            box-shadow: none !important;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            color: #000000 !important;
+            font-family: $sans-serif;
+            font-weight: 500;
+            font-size: 0.85rem;
+            margin: 0 0.25rem;
+            text-decoration: none;
+            
+            &:focus,
+            &:active,
+            &:hover,
+            &:visited {
+              outline: none !important;
+              border: none !important;
+              box-shadow: none !important;
+              color: #000000 !important;
+              background-color: #f0f0f0 !important;
+              text-decoration: none;
+            }
+            
+            i {
+              font-size: 0.85rem;
+              color: #000000 !important;
+              margin-right: 0.5rem;
+            }
+          }
         }
+      }
+    
+    .articles {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 1200px;
+      gap: 32px;
+      justify-items: center;
+      display: grid;
+      
+      // Center single project
+      article:only-child {
+        grid-column: 1 / -1;
+        max-width: 600px;
+        justify-self: center;
+      }
+      
+      // Center lingvis.io project
+      article.lingvis-project {
+        grid-column: 1 / -1;
+        max-width: 600px;
+        justify-self: center;
       }
     }
     
-    .thesis-buttons-container {
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      align-self: center;
-      width: 30%;
-      height: 100%;
-      min-height: 100%;
-      gap: 0.75rem;
+    figure {
+      aspect-ratio: 2.5 / 1;
+      max-height: 180px;
+    }
+    
+    .article-body {
+      text-align: center;
+      padding: 1rem 14px 14px 14px;
       
-      .thesis-button {
+      h4 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        
+        a {
+          color: $default-color;
+          text-decoration: none;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: $default-shade;
+            text-decoration: underline;
+          }
+        }
+      }
+      
+      p {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+      }
+      
+      .demo-button {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -849,126 +997,32 @@ button{
         color: #000000 !important;
         font-family: $sans-serif;
         font-weight: 500;
-        font-size: 0.85rem;
         margin: 0 0.25rem;
-        text-decoration: none;
-        width: 90%;
-        max-width: 200px;
+        
+        &:first-child {
+          min-width: 40px;
+          padding: 0.5rem;
+        }
         
         &:focus,
         &:active,
-        &:hover,
-        &:visited {
+        &:hover {
           outline: none !important;
           border: none !important;
           box-shadow: none !important;
           color: #000000 !important;
           background-color: #f0f0f0 !important;
-          text-decoration: none;
         }
         
         i {
-          font-size: 0.85rem;
+          font-size: 1rem;
           color: #000000 !important;
-          margin-right: 0.5rem;
         }
       }
     }
   }
   
-  .articles {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1200px;
-    gap: 32px;
-    justify-items: center;
-    display: grid;
-    
-    // Center single project
-    article:only-child {
-      grid-column: 1 / -1;
-      max-width: 600px;
-      justify-self: center;
-    }
-    
-    // Center lingvis.io project
-    article.lingvis-project {
-      grid-column: 1 / -1;
-      max-width: 600px;
-      justify-self: center;
-    }
-  }
-  
-  figure {
-    aspect-ratio: 2.5 / 1;
-    max-height: 180px;
-  }
-  
-  .article-body {
-    text-align: center;
-    padding: 1rem 14px 14px 14px;
-    
-    h4 {
-      text-align: center;
-      margin-bottom: 0.5rem;
-      
-      a {
-        color: $default-color;
-        text-decoration: none;
-        transition: color 0.3s ease;
-        
-        &:hover {
-          color: $default-shade;
-          text-decoration: underline;
-        }
-      }
-    }
-    
-    p {
-      text-align: center;
-      margin-bottom: 0.5rem;
-      font-size: 0.9rem;
-    }
-    
-    .demo-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border: none !important;
-      outline: none !important;
-      background-color: #f0f0f0 !important;
-      box-shadow: none !important;
-      border-radius: 8px;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-      color: #000000 !important;
-      font-family: $sans-serif;
-      font-weight: 500;
-      margin: 0 0.25rem;
-      
-      &:first-child {
-        min-width: 40px;
-        padding: 0.5rem;
-      }
-      
-      &:focus,
-      &:active,
-      &:hover {
-        outline: none !important;
-        border: none !important;
-        box-shadow: none !important;
-        color: #000000 !important;
-        background-color: #f0f0f0 !important;
-      }
-      
-      i {
-        font-size: 1rem;
-        color: #000000 !important;
-      }
-    }
-  }
-}
-// Events section styles
+  // Events section styles
 .about .events-section {
   .articles {
     grid-template-columns: repeat(2, 1fr);
