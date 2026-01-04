@@ -1091,6 +1091,11 @@ button{
       text-align: center;
       margin-bottom: 0.5rem;
       
+      // Reduce space before description (first paragraph)
+      &:first-of-type {
+        margin-top: -0.5rem;
+      }
+      
       // Italic and black for event title (3rd paragraph)
       &:nth-child(3) {
         font-style: italic;
