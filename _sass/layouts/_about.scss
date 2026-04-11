@@ -689,6 +689,23 @@ body:has(#resume-section:target) .about .intro-section {
           color: $default-shade;
         }
       }
+
+      .publication-award {
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        margin-top: 0.35rem;
+        font-family: $sans-serif !important;
+        font-size: 0.88rem !important;
+        font-weight: 600;
+        font-style: normal;
+        color: #7a5c20 !important;
+
+        .fa-trophy {
+          color: #c9a227;
+          font-size: 1rem;
+        }
+      }
       
       .publication-tags {
         margin-top: 0.5rem !important;
@@ -1090,11 +1107,6 @@ button{
     p {
       text-align: center;
       margin-bottom: 0.5rem;
-      
-      // Reduce space before description (first paragraph)
-      &:first-of-type {
-        margin-top: -0.5rem;
-      }
       
       // Italic and black for event title (3rd paragraph)
       &:nth-child(3) {

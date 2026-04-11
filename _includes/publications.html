@@ -20,6 +20,12 @@
       <span class="publication-venue">{{ publication.journal }}</span>
       <span class="publication-year">{{ publication.year }}</span>
     </div>
+    {% if publication.award %}
+    <div class="publication-award">
+      <i class="fa fa-trophy" aria-hidden="true"></i>
+      <span>{{ publication.award }}</span>
+    </div>
+    {% endif %}
     {% if publication.tags %}
     <div class="publication-tags">
       {% assign sorted_tags = publication.tags | sort %}
